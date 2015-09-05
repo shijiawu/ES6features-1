@@ -31,9 +31,9 @@ ES6 包含以下新的特性：
 
 ## ECMAScript 6 特性
 
-### Arrows
+### Arrows 箭头函数
 箭头函数是一种采用`=>`语法的函数简写形式。这在语法上与C#，Java 8 以及CoffeeScript的相关特性很类似。箭头函数既支持声明语句体，也支持能返回表达式的值的表达式语句体。
-与普通函数不同的是，它共享相同词法上的`this`作为它们的外围代码。
+与普通函数不同的是，箭头函数的`this`绑定的是定义时所在的对象。
 
 ```JavaScript
 // 表达式语句体
@@ -58,9 +58,9 @@ var bob = {
 }
 ```
 
-### Classes
+### Classes 类
 ES6的类是对于基于原型的OO模式的一种简单的语法糖。
- Having a single convenient declarative form makes class patterns easier to use, and encourages interoperability.  Classes support prototype-based inheritance, super calls, instance and static methods and constructors.
+它有一个使得class类模式更容易使用的简便声明形式，且鼓励互操作性。类支持基于原型的继承,父调用，实例化，静态方法和构造函数。
 
 ```JavaScript
 class SkinnedMesh extends THREE.Mesh {
