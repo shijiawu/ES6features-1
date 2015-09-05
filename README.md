@@ -32,16 +32,16 @@ ES6 包含以下新的特性：
 ## ECMAScript 6 特性
 
 ### Arrows
-箭头函数是一种采用`=>`语法的函数简写形式。这在语法上与C#，Java 8 以及CoffeeScript的相关特性很类似。
-They support both statement block bodies as well as expression bodies which return the value of the expression.  Unlike functions, arrows share the same lexical `this` as their surrounding code.
+箭头函数是一种采用`=>`语法的函数简写形式。这在语法上与C#，Java 8 以及CoffeeScript的相关特性很类似。箭头函数既支持声明语句体，也支持能返回表达式的值的表达式语句体。
+与普通函数不同的是，它共享相同词法上的`this`作为它们的外围代码。
 
 ```JavaScript
-// Expression bodies
+// 表达式语句体
 var odds = evens.map(v => v + 1);
 var nums = evens.map((v, i) => v + i);
 var pairs = evens.map(v => ({even: v, odd: v + 1}));
 
-// Statement bodies
+// 声明语句体
 nums.forEach(v => {
   if (v % 5 === 0)
     fives.push(v);
