@@ -4,10 +4,10 @@
 ## 介绍
 ECMAScript 6, 也称为ECMAScript 2015,是ECMAScript标准的最新版本。ES6是对于JavaScript语言的一次重大的革新，且是自从2009年ES5的标准化后的第一次更新。 ES6特性在主要的JavaScript引擎中的实现[目前正在进行中](http://kangax.github.io/es5-compat-table/es6/)。
 
-[查看ES6 标准](http://www.ecma-international.org/ecma-262/6.0/)，里面包含了ECMAScript 6语言的全部规范说明。
+[查看ES6 标准](http://www.ecma-international.org/ecma-262/6.0/)，包含了ECMAScript 6语言的全部规范说明。
 
 ES6 包含以下新的特性：
-- [arrows](#arrows)
+- [arrows 箭头函数](#arrows)
 - [classes](#classes)
 - [enhanced object literals](#enhanced-object-literals)
 - [template strings](#template-strings)
@@ -31,7 +31,7 @@ ES6 包含以下新的特性：
 
 ## ECMAScript 6 特性
 
-### Arrows 箭头函数
+### Arrows
 箭头函数是一种采用`=>`语法的函数简写形式。这在语法上与C#，Java 8 以及CoffeeScript的相关特性很类似。箭头函数既支持声明语句体，也支持能返回表达式的值的表达式语句体。
 与普通函数不同的是，箭头函数的`this`绑定的是定义时所在的对象。
 
@@ -58,7 +58,7 @@ var bob = {
 }
 ```
 
-### Classes 类
+### Classes
 ES6的类是对于基于原型的OO模式的一种简单的语法糖。
 它有一个使得class类模式更容易使用的简便声明形式，且鼓励互操作性。类支持基于原型的继承,父调用，实例化，静态方法和构造函数。
 
