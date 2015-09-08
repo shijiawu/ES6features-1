@@ -7,11 +7,11 @@ ECMAScript 6, 也称为ECMAScript 2015,是ECMAScript标准的最新版本。ES6�
 [查看ES6 标准](http://www.ecma-international.org/ecma-262/6.0/)，包含了ECMAScript 6语言的全部规范说明。
 
 ES6 包含以下新的特性：
-- [arrows 箭头函数](#arrows)
-- [classes](#classes)
-- [enhanced object literals](#enhanced-object-literals)
-- [template strings](#template-strings)
-- [destructuring](#destructuring)
+- [arrows - 箭头函数](#arrows)
+- [classes - 类](#classes)
+- [enhanced object literals - 增强对象字面量](#enhanced-object-literals)
+- [template strings - 模板字符串](#template-strings)
+- [destructuring - 解构](#destructuring)
 - [default + rest + spread](#default--rest--spread)
 - [let + const](#let--const)
 - [iterators + for..of](#iterators--forof)
