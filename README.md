@@ -15,13 +15,13 @@ ES6 包含以下新的特性：
 - [default + rest + spread](#default--rest--spread)
 - [let + const - 声明命令](#let--const)
 - [iterators + for..of - 遍历器](#iterators--forof)
-- [generators](#generators)
-- [unicode](#unicode)
+- [generators函数](#generators)
+- [unicode - 字符串扩展](#unicode)
 - [modules - 模块](#modules)
 - [module loaders - 模块加载](#module-loaders)
 - [map + set + weakmap + weakset](#map--set--weakmap--weakset)
 - [proxies](#proxies)
-- [symbols](#symbols)
+- [symbols - 第七种数据类型](#symbols)
 - [subclassable built-ins](#subclassable-built-ins)
 - [promises](#promises)
 - [math + number + string + array + object APIs](#math--number--string--array--object-apis)
@@ -89,7 +89,7 @@ class SkinnedMesh extends THREE.Mesh {
 ```
 
 ### Enhanced Object Literals
-Object literals are extended to support setting the prototype at construction, shorthand for `foo: foo` assignments, defining methods, making super calls, and computing property names with expressions.  Together, these also bring object literals and class declarations closer together, and let object-based design benefit from some of the same conveniences.
+对象字面量将扩展到可以支持在设置当前对象的`prototype`对象，对于`foo: foo`赋值的缩写，定义方法，使用父调用，以及通过表达式动态计算属性名。这些也使得对象字面量和类的声明的关系更加紧密了，基于对象的设计也能从这些相同的便利条件中得到一些益处。
 
 ```JavaScript
 var obj = {
