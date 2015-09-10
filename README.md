@@ -2,9 +2,9 @@
 > 翻译自https://github.com/lukehoban/es6features/
 
 ## 介绍
-ECMAScript 6, 也称为ECMAScript 2015,是ECMAScript标准的最新版本。ES6是对于JavaScript语言的一次重大的革新，且是自从2009年ES5的标准化后的第一次更新。 ES6特性在主要的JavaScript引擎中的实现[目前正在进行中](http://kangax.github.io/es5-compat-table/es6/)。
+ECMAScript 6, 也称为ECMAScript 2015,是ECMAScript标准的最新版本。ES6是对于JavaScript语言的一次重大的革新，也是自从2009年ES5的标准化后的第一次更新。 ES6特性在主要的JavaScript引擎里面[正在陆续实现中](http://kangax.github.io/es5-compat-table/es6/)。
 
-[查看ES6 标准](http://www.ecma-international.org/ecma-262/6.0/)，包含了ECMAScript 6语言的全部规范说明。
+[ES6 标准](http://www.ecma-international.org/ecma-262/6.0/)包含了ECMAScript 6语言的全部规范说明。
 
 ES6 包含以下新的特性：
 - [arrows - 箭头函数](#arrows)
@@ -13,12 +13,12 @@ ES6 包含以下新的特性：
 - [template strings - 模板字符串](#template-strings)
 - [destructuring - 解构](#destructuring)
 - [default + rest + spread](#default--rest--spread)
-- [let + const](#let--const)
-- [iterators + for..of](#iterators--forof)
+- [let + const - 声明命令](#let--const)
+- [iterators + for..of - 遍历器](#iterators--forof)
 - [generators](#generators)
 - [unicode](#unicode)
-- [modules](#modules)
-- [module loaders](#module-loaders)
+- [modules - 模块](#modules)
+- [module loaders - 模块加载](#module-loaders)
 - [map + set + weakmap + weakset](#map--set--weakmap--weakset)
 - [proxies](#proxies)
 - [symbols](#symbols)
@@ -27,7 +27,7 @@ ES6 包含以下新的特性：
 - [math + number + string + array + object APIs](#math--number--string--array--object-apis)
 - [binary and octal literals](#binary-and-octal-literals)
 - [reflect api](#reflect-api)
-- [tail calls](#tail-calls)
+- [tail calls - 尾调用](#tail-calls)
 
 ## ECMAScript 6 特性
 
