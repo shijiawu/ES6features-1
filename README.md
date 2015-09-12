@@ -108,7 +108,7 @@ var obj = {
 ```
 
 ### Template Strings
-Template strings provide syntactic sugar for constructing strings.  This is similar to string interpolation features in Perl, Python and more.  Optionally, a tag can be added to allow the string construction to be customized, avoiding injection attacks or constructing higher level data structures from string contents.
+模板字符串提供构造字符串的语法糖。这里的字符串变量插入特性与Perl, Python等语言很相似。一个标签可以随意地添加进字符串里面，使得字符串可以自定义的构造，避免了注入攻击或者从字符串内容构造更复杂的数据结构。
 
 ```JavaScript
 // Basic literal string creation
