@@ -131,7 +131,7 @@ GET`http://foo.org/bar?a=${a}&b=${b}
 ```
 
 ### Destructuring
-Destructuring allows binding using pattern matching, with support for matching arrays and objects.  Destructuring is fail-soft, similar to standard object lookup `foo["bar"]`, producing `undefined` values when not found.
+解构允许使用模式匹配进行绑定，支持数组和对象的匹配。解构具有容错性，与在标准对象`foo["bar"]`里面做查询,若找不到则返回`undefined`这种处理方式相似。
 
 ```JavaScript
 // list matching
