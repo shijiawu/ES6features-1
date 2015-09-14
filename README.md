@@ -13,7 +13,7 @@ ES6 包含以下新的特性：
 - [template strings - 模板字符串](#template-strings)
 - [destructuring - 解构](#destructuring)
 - [default + rest + spread](#default--rest--spread)
-- [let + const - 声明命令](#let--const)
+- [let + const - 块级作用域](#let--const)
 - [iterators + for..of - 遍历器](#iterators--forof)
 - [generators函数](#generators)
 - [unicode - 字符串扩展](#unicode)
@@ -161,6 +161,7 @@ a === 1;
 ```
 
 ### Default + Rest + Spread
+
 Callee-evaluated default parameter values.  Turn an array into consecutive arguments in a function call.  Bind trailing parameters to an array.  Rest replaces the need for `arguments` and addresses common cases more directly.
 
 ```JavaScript
@@ -186,8 +187,7 @@ f(...[1,2,3]) == 6
 ```
 
 ### Let + Const
-Block-scoped binding constructs.  `let` is the new `var`.  `const` is single-assignment.  Static restrictions prevent use before assignment.
-
+块级作用域绑定构造体。`let`是新的`var`。 `const`是单次赋值。静态的约束使得变量要在赋值之后才可使用。
 
 ```JavaScript
 function f() {
