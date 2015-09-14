@@ -47,7 +47,7 @@ nums.forEach(v => {
     fives.push(v);
 });
 
-// Lexical this
+// 词法上的this
 var bob = {
   _name: "Bob",
   _friends: [],
@@ -89,20 +89,20 @@ class SkinnedMesh extends THREE.Mesh {
 ```
 
 ### Enhanced Object Literals
-对象字面量将扩展到可以支持在设置当前对象的`prototype`对象，对于`foo: foo`赋值的缩写，定义方法，使用父调用，以及通过表达式动态计算属性名。这些也使得对象字面量和类的声明的关系更加紧密了，基于对象的设计也能从这些相同的便利条件中得到一些益处。
+对象字面量将扩展到可以支持在设置当前对象的`prototype`对象，对于`foo: foo`赋值的缩写，定义方法，使用父调用，以及通过表达式计算（动态的）属性名。这些也使得对象字面量和类的声明的关系更加紧密了，基于对象的设计也能从这些相同的便利条件中得到一些益处。
 
 ```JavaScript
 var obj = {
     // __proto__
     __proto__: theProtoObj,
-    // Shorthand for ‘handler: handler’
+    //  ‘handler: handler’的缩写
     handler,
-    // Methods
+    // 方法
     toString() {
      // Super calls
      return "d " + super.toString();
     },
-    // Computed (dynamic) property names
+    // 计算（动态的）属性名
     [ 'prop_' + (() => 42)() ]: 42
 };
 ```
