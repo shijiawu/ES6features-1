@@ -134,28 +134,28 @@ GET`http://foo.org/bar?a=${a}&b=${b}
 解构允许使用模式匹配进行绑定，支持数组和对象的匹配。解构具有容错性，与在标准对象`foo["bar"]`里面做查询,若找不到则返回`undefined`这种处理方式相似。
 
 ```JavaScript
-// list matching
+// 数组匹配
 var [a, , b] = [1,2,3];
 
-// object matching
+// 对象匹配
 var { op: a, lhs: { op: b }, rhs: c }
        = getASTNode()
 
-// object matching shorthand
-// binds `op`, `lhs` and `rhs` in scope
+// 对象匹配简写
+// 绑定 `op`, `lhs` and `rhs` 进当前作用域
 var {op, lhs, rhs} = getASTNode()
 
-// Can be used in parameter position
+// 也能用在参数的位置上
 function g({name: x}) {
   console.log(x);
 }
 g({name: 5})
 
-// Fail-soft destructuring
+// 解构的容错性
 var [a] = [];
 a === undefined;
 
-// Fail-soft destructuring with defaults
+// 解构具有默认值的容错性
 var [a = 1] = [];
 a === 1;
 ```
