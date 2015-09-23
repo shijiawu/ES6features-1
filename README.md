@@ -161,7 +161,7 @@ a === 1;
 ```
 
 ### Default + Rest + Spread
-
+被调用、可赋值的参数赋默认值。
 Callee-evaluated default parameter values.  Turn an array into consecutive arguments in a function call.  Bind trailing parameters to an array.  Rest replaces the need for `arguments` and addresses common cases more directly.
 
 ```JavaScript
