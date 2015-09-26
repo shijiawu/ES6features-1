@@ -161,8 +161,7 @@ a === 1;
 ```
 
 ### Default + Rest + Spread
-被调用、可赋值的参数赋默认值。
-Callee-evaluated default parameter values.  Turn an array into consecutive arguments in a function call.  Bind trailing parameters to an array.  Rest replaces the need for `arguments` and addresses common cases more directly.
+函数的参数默认值可被调用或直接进行默认求值。使用`...`Spread运算符在函数调用时可将数组转为连续的参数形式。使用`...`Rest语法可将函数尾部的多个参数转为一个数组中。Rest替代了`grguments`的需求，且在大多数场景下更为简单粗暴。
 
 ```JavaScript
 function f(x, y=12) {
