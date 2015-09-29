@@ -20,7 +20,7 @@ ES6 包含以下新的特性：
 - [modules - 模块](#modules)
 - [module loaders - 模块加载](#module-loaders)
 - [map + set + weakmap + weakset](#map--set--weakmap--weakset)
-- [proxies](#proxies)
+- [proxies - 代理](#proxies)
 - [symbols - 第七种数据类型](#symbols)
 - [subclassable built-ins](#subclassable-built-ins)
 - [promises](#promises)
@@ -205,6 +205,7 @@ function f() {
 ```
 
 ### Iterators + For..Of
+迭代器对象使得自定义的迭代像CLR的IEnumerable接口或Java的Iterable接口。
 Iterator objects enable custom iteration like CLR IEnumerable or Java Iterable.  Generalize `for..in` to custom iterator-based iteration with `for..of`.  Don’t require realizing an array, enabling lazy design patterns like LINQ.
 
 ```JavaScript
