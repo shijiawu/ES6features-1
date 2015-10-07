@@ -12,7 +12,7 @@ ES6 包含以下新的特性：
 - [enhanced object literals - 增强对象字面量](#enhanced-object-literals)
 - [template strings - 模板字符串](#template-strings)
 - [destructuring - 解构](#destructuring)
-- [default + rest + spread](#default--rest--spread)
+- [default + rest + spread - 默认赋参+不定参数+参数展开](#default--rest--spread)
 - [let + const - 块级作用域](#let--const)
 - [iterators + for..of - 遍历器](#iterators--forof)
 - [generators函数](#generators)
@@ -23,10 +23,10 @@ ES6 包含以下新的特性：
 - [proxies - 代理](#proxies)
 - [symbols - 第七种数据类型](#symbols)
 - [subclassable built-ins](#subclassable-built-ins)
-- [promises](#promises)
+- [promises对象](#promises)
 - [math + number + string + array + object APIs](#math--number--string--array--object-apis)
-- [binary and octal literals](#binary-and-octal-literals)
-- [reflect api](#reflect-api)
+- [binary and octal literals - 二进制与八进制字面量](#binary-and-octal-literals)
+- [reflect api - 反射API](#reflect-api)
 - [tail calls - 尾调用](#tail-calls)
 
 ## ECMAScript 6 特性
@@ -205,8 +205,7 @@ function f() {
 ```
 
 ### Iterators + For..Of
-迭代器对象使得自定义的迭代像CLR的IEnumerable接口或Java的Iterable接口。
-Iterator objects enable custom iteration like CLR IEnumerable or Java Iterable.  Generalize `for..in` to custom iterator-based iteration with `for..of`.  Don’t require realizing an array, enabling lazy design patterns like LINQ.
+迭代器对象能够像CLR的IEnumerable接口或Java的Iterable接口一样自定义的迭代。通常我们会将`for..in`转换为自定义的基于迭代器的`for..of`迭代。不需要实现一个数组，使用像LINQ一样的惰性设计模式。
 
 ```JavaScript
 let fibonacci = {
@@ -230,6 +229,7 @@ for (var n of fibonacci) {
 ```
 
 Iteration is based on these duck-typed interfaces (using [TypeScript](http://typescriptlang.org) type syntax for exposition only):
+迭代器是基于这些鸭子类型的接口 (此处使用[TypeScript](http://typescriptlang.org)的类型语法只是来阐述问题)：
 ```TypeScript
 interface IteratorResult {
   done: boolean;
