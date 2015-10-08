@@ -275,6 +275,7 @@ for (var n of fibonacci) {
 
 The generator interface is (using [TypeScript](http://typescriptlang.org) type syntax for exposition only):
 
+生成器接口如下(此处使用 [TypeScript](http://typescriptlang.org) 的类型语法只是来阐述问题)：
 ```TypeScript
 interface Generator extends Iterator {
     next(value?: any): IteratorResult;
