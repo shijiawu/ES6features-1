@@ -248,6 +248,10 @@ Generators simplify iterator-authoring using `function*` and `yield`.  A functio
 
 Note: Can also be used to enable ‘await’-like async programming, see also ES7 `await` proposal.
 
+生成器通过简单地使用`function*`和`yield`进行编写。形如`function*`的函数声明返回一个生成器实例。生成器是迭代器的子类型，迭代器包括附加的`next`和`throw`，这使得值可以回流到生成器中，所以，`yield`是一个返回（或抛出）值的表达式形式。
+
+注意：也可以被用作类似‘await’一样的异步编程中，具体细节查看[ES7的`await`提案](http://wiki.ecmascript.org/doku.php?id=strawman:async_functions)。
+
 ```JavaScript
 var fibonacci = {
   [Symbol.iterator]: function*() {
