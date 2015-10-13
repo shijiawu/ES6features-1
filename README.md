@@ -387,6 +387,8 @@ System.set('jquery', Module({$: $})); // WARNING: not yet finalized
 ### Map + Set + WeakMap + WeakSet
 Efficient data structures for common algorithms.  WeakMaps provides leak-free object-key’d side tables.
 
+用于实现常见算法的高效数据结构，WeakMaps提供不会泄露的对象键(对象作为键名，而且键名指向对象)索引表。
+
 ```JavaScript
 // Sets
 var s = new Set();
@@ -413,6 +415,8 @@ ws.add({ data: 42 });
 
 ### Proxies
 Proxies enable creation of objects with the full range of behaviors available to host objects.  Can be used for interception, object virtualization, logging/profiling, etc.
+
+代理可以创造一个具备宿主对象全部可用行为的对象。可用于拦截、对象虚拟化、日志/分析等。
 
 ```JavaScript
 // Proxying a normal object
@@ -441,6 +445,8 @@ p() === 'I am the proxy';
 ```
 
 There are traps available for all of the runtime-level meta-operations:
+
+所有运行时级别的元操作都有对应的陷阱（使得这些操作都可以被代理）：
 
 ```JavaScript
 var handler =
