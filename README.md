@@ -286,6 +286,8 @@ interface Generator extends Iterator {
 ### Unicode
 Non-breaking additions to support full Unicode, including new Unicode literal form in strings and new RegExp `u` mode to handle code points, as well as new APIs to process strings at the 21bit code points level.  These additions support building global apps in JavaScript.
 
+渐进增强地支持全部Unicode的内容，包括字符串支持新的Unicode文本形式，也增加了新的正则表达式修饰符u来处理码位，同时，新的API可以在21bit码位级别上处理字符串，增加这些支持后可以使用 Javascript 构建全球化的应用。
+
 ```JavaScript
 // same as ES5.1
 "𠮷".length == 2
@@ -308,6 +310,8 @@ for(var c of "𠮷") {
 ### Modules
 Language-level support for modules for component definition.  Codifies patterns from popular JavaScript module loaders (AMD, CommonJS). Runtime behaviour defined by a host-defined default loader.  Implicitly async model – no code executes until requested modules are available and processed.
 
+ES6 在语言层面上支持使用模块来进行组件定义，将流行的JavaScript模块加载器（AMD、CommonJS）中的模式固化到了语言中。运行时行为由宿主定义的默认加载器定义，隐式异步模型 - 直到（全部）请求的模块均可用且经处理后，才会执行（当前模块内的）代码。
+
 ```JavaScript
 // lib/math.js
 export function sum(x, y) {
@@ -327,6 +331,8 @@ alert("2π = " + sum(pi, pi));
 ```
 
 Some additional features include `export default` and `export *`:
+
+一些额外的新特性，包括export default以及export *：
 
 ```JavaScript
 // lib/mathplusplus.js
