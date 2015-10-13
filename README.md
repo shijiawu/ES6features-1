@@ -541,6 +541,8 @@ arr.length == 2
 ### Math + Number + String + Array + Object APIs
 Many new library additions, including core Math libraries, Array conversion helpers, String helpers, and Object.assign for copying.
 
+新加入了许多库，包括核心数学库，进行数组转换的协助函数，字符串 helper，以及用来进行拷贝的Object.assign。
+
 ```JavaScript
 Number.EPSILON
 Number.isInteger(Infinity) // false
@@ -568,6 +570,8 @@ Object.assign(Point, { origin: new Point(0,0) })
 
 ### Binary and Octal Literals
 Two new numeric literal forms are added for binary (`b`) and octal (`o`).
+
+加入对二进制(`b`)和八进制(`o`)字面量的支持。
 
 ```JavaScript
 0b111110111 === 503 // true
