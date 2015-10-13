@@ -577,6 +577,8 @@ Two new numeric literal forms are added for binary (`b`) and octal (`o`).
 ### Promises
 Promises are a library for asynchronous programming.  Promises are a first class representation of a value that may be made available in the future.  Promises are used in many existing JavaScript libraries.
 
+Promise是用来进行异步编程的库。Promise是对一个“将来可能会变得可用”的值的第一类表示，Promise被使用在现有的许多JavaScript库中。
+
 ```JavaScript
 function timeout(duration = 0) {
     return new Promise((resolve, reject) => {
@@ -596,12 +598,16 @@ var p = timeout(1000).then(() => {
 ### Reflect API
 Full reflection API exposing the runtime-level meta-operations on objects.  This is effectively the inverse of the Proxy API, and allows making calls corresponding to the same meta-operations as the proxy traps.  Especially useful for implementing proxies.
 
+完整的反射API。此API在对象上暴露了运行时级别的元操作，从效果上来说，这是一个反代理API，并允许调用与代理陷阱中相同的元操作。实现代理非常有用。
+
 ```JavaScript
 // No sample yet
 ```
 
 ### Tail Calls
 Calls in tail-position are guaranteed to not grow the stack unboundedly.  Makes recursive algorithms safe in the face of unbounded inputs.
+
+保证尾部调用时栈不会无限增长，这使得递归算法在面对未作限制的输入时，能够安全地执行。
 
 ```JavaScript
 function factorial(n, acc = 1) {
@@ -612,6 +618,8 @@ function factorial(n, acc = 1) {
 
 // Stack overflow in most implementations today,
 // but safe on arbitrary inputs in ES6
+// 栈溢出存在于现在绝大多数的实现中，
+// 但是在 ES6 中，针对任意的输入都很安全
 factorial(100000)
 ```
 
