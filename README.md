@@ -358,6 +358,16 @@ Module loaders support:
 
 The default module loader can be configured, and new loaders can be constructed to evaluate and load code in isolated or constrained contexts.
 
+模块加载器支持:
+
+动态加载
+状态隔离
+全局命名空间隔离
+编译钩子
+嵌套虚拟化(注: 在模块内调用模块)
+
+默认的模块加载器是可配置的，也可以构建新的加载器，对在隔离和受限上下文中的代码进行求值和加载。
+
 ```JavaScript
 // Dynamic loading – ‘System’ is default loader
 System.import('lib/math').then(function(m) {
