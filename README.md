@@ -471,6 +471,8 @@ var handler =
 ### Symbols
 Symbols enable access control for object state.  Symbols allow properties to be keyed by either `string` (as in ES5) or `symbol`.  Symbols are a new primitive type. Optional `description` parameter used in debugging - but is not part of identity.  Symbols are unique (like gensym), but not private since they are exposed via reflection features like `Object.getOwnPropertySymbols`.
 
+符号(Symbol) 能够实现针对对象状态的访问控制，允许使用string(与ES5相同)或symbol作为键来访问属性。符号是一个新的原语类型，可选的description参数可以用于调试——但并不是符号身份的一部分。符号是独一无二的(如同gensym（所产生的符号）)，但不是私有的，因为它们可以通过类似Object.getOwnPropertySymbols的反射特性暴露出来。
+
 
 ```JavaScript
 var MyClass = (function() {
@@ -503,6 +505,15 @@ Object construction for a function named `Ctor` now uses two-phases (both virtua
 - Invoke constructor on new instance to initialize
 
 The known `@@create` symbol is available via `Symbol.create`.  Built-ins now expose their `@@create` explicitly.
+
+在 ES6 中，内建对象，如Array、Date以及DOM元素可以被子类化。
+
+针对名为Ctor的函数，其对应的对象的构造现在分为两个阶段（这两个阶段都使用虚分派）：
+
+*调用Ctor[@@create]为对象分配空间，并插入特殊的行为
+*在新实例上调用构造函数来进行初始化
+
+已知的@@create符号可以通过Symbol.create来使用，内建对象现在显式暴露它们的@@create。
 
 ```JavaScript
 // Pseudo-code of Array
