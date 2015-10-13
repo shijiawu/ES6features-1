@@ -228,7 +228,6 @@ for (var n of fibonacci) {
 }
 ```
 
-Iteration is based on these duck-typed interfaces (using [TypeScript](http://typescriptlang.org) type syntax for exposition only):
 迭代器是基于这些鸭子类型的接口 (此处使用[TypeScript](http://typescriptlang.org)的类型语法只是来阐述问题)：
 ```TypeScript
 interface IteratorResult {
